@@ -3,9 +3,8 @@ import useSWR from 'swr';
 
 function LastSalesPage(props) {
     const [sales, setSales] = useState(props.sales);
-    // const [isLoading, setIsLoading] = useState(false);
 
-    const { data, error } = useSWR('https://nextjs-course-c81cc-default-rtdb.firebaseio.com/sales.json', (url) => fetch(url).then(res => res.json()));
+    const { data, error } = useSWR('https://material-ui-course-2da52-default-rtdb.europe-west1.firebasedatabase.app/sales.json', (url) => fetch(url).then(res => res.json()));
 
     useEffect(() => {
         if (data) {
