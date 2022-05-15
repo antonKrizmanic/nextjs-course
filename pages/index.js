@@ -1,9 +1,10 @@
-import styles from '../styles/Home.module.css'
+import Hero from "../components/home-page/Hero"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.container}>
-      <h1>Hello NextJs</h1>
-    </div>
+    <>
+      <Hero />
+      {/* <FeaturedPosts /> */}
+    </>
   )
 }
