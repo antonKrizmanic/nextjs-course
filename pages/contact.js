@@ -1,7 +1,15 @@
+import Head from 'next/head';
+
+import ContactForm from '../components/contact/contact-form';
+
 export default function ContactPage() {
     return (
-        <div>
-            <h1>Hello NextJs</h1>
-        </div>
-    )
+        <>
+            <Head>
+                <title>Contact Me</title>
+                <meta name='description' content='Send me your messages!' />
+            </Head>
+            <ContactForm />
+        </>
+    );
 }
