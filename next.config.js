@@ -4,8 +4,8 @@ module.exports = (phase) => {
     if (phase === PHASE_DEVELOPMENT_SERVER) {
         return {
             env: {
-                mongodb_username: 'maximilian',
-                mongodb_password: 'password',
+                mongodb_username: 'next-coursejs',
+                mongodb_password: 'cGvmI0GGeLQ3IbWu',
                 mongodb_clustername: 'cluster0',
                 mongodb_databas: 'my-site',
             }
@@ -14,8 +14,8 @@ module.exports = (phase) => {
     // Values for production
     return {
         env: {
-            mongodb_username: 'maximilian',
-            mongodb_password: 'password',
+            mongodb_username: 'next-coursejs',
+            mongodb_password: 'cGvmI0GGeLQ3IbWu',
             mongodb_clustername: 'cluster0',
             mongodb_databas: 'my-site',
         }
